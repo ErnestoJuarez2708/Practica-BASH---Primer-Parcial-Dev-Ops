@@ -7,6 +7,7 @@ if [ -z "$1" ]; then
 fi
 
 SERVICE=$1
+TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
 STATUS=$(systemctl is-active $SERVICE)
 
 if [ "$STATUS" == "active" ]; then
@@ -15,7 +16,12 @@ if [ "$STATUS" == "active" ]; then
 else
     echo "ALERTA: El servicio $SERVICE no está activo!"
     RESULT="inactivo"
+    # Enviar notificación por correo (cambia el email)
+    echo "ALERTA: $SERVICE no está activo en $TIMESTAMP" | mail -s "Alerta de Servicio" ernestojuarezgutierrez03@gmail.com
 fi
 
-# Guardar en log
-echo "$SERVICE: $RESULT" >> service_status.log
+# Guardar en log con timestamp
+echo "[$TIMESTAMP] $SERVICE: $RESULT" >> service_status.log
+
+
+
