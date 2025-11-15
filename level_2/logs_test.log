@@ -2,3 +2,11 @@
 [2025-11-15 15:06:10] No se encontraron logs antiguos.
 [2025-11-15 15:09:17] Iniciando limpieza de logs...
 [2025-11-15 15:09:17] No se encontraron logs antiguos.
+[2025-11-15 15:44:41] Iniciando limpieza de logs...
+[2025-11-15 15:44:41] Comprimiendo 2 archivos antiguos...
+tar: Eliminando la `/' inicial de los nombres
+tar: Eliminando la `/' inicial de los objetivos de los enlaces
+[2025-11-15 15:44:41] Logs comprimidos exitosamente en: /home/ernesto/Practica-BASH---Primer-Parcial-Dev-Ops/level_2/backup/logs/logs_backup_20251115_154441.tar.gz
+[2025-11-15 15:44:41] Archivos originales eliminados (2 archivos).
+[2025-11-15 15:44:41] Limpieza completada con éxito.
+-------------------------------------------
