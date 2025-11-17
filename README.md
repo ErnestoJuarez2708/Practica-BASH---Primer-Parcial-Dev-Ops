@@ -20,7 +20,7 @@
 
 ## Nivel 3: Despliegue Automatizado
 - `deploy_app.sh`: Clona o actualiza repo GitHub, reinicia `nginx`, log detallado.
-- **Bonus**: Control de errores + notificación por **webhook (Discord/Slack)**.
+- **Bonus**: Control de errores.
 
 ---
 
